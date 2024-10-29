@@ -1,0 +1,40 @@
+*{
+    font-family: "Nunito", sans-serif;
+}
+
+ body {
+     background: linear-gradient(135deg, #f3e6ff, #dff6ff);
+ }
+
+ .container {
+     max-width: 500px;
+     background-color: #f7560b;
+     border-radius: 15px;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+ }
+
+ .btn {
+     transition: transform 0.2s ease-in-out;
+ }
+
+ .btn:hover {
+     transform: scale(1.05);
+ }
+
+ .input,
+ .select {
+     border-color: #d1d5db;
+ }
+
+ .bookmark-item {
+     transition: background-color 0.3s ease;
+ }
+
+ .bookmark-item:hover {
+     background-color: #f1f5f9;
+ }
+
+ .cntr-btn {
+    text-align: center;
+ }

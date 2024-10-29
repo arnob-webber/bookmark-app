@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+</head>
+
+<body>
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="container mx-auto p-6">
+            <h1 class="text-4xl font-bold text-center mb-6 text-gray-700"> Mini Poket Bookmark </h1>
+
+            <!-- input for adding new bookmarks -->
+            <input type="text" id="linkInput" placeholder="enter your bookmark link"
+                class="input mt-4 p-3 border rounded-lg w-full focus:ring-2 focus:ring-blue-400">
+
+            <!-- category dropdown and new category input -->
+            <div class="flex mt-4 space-x-2">
+                <select id="categorySelect" class="select p-3 border rounded-lg w-1/2 focus:ring-2 focus:ring-blue-400">
+                    <option value="general" >general</option>
+                </select>
+                <input type="text" id="newCategoryInput" placeholder="add new category"
+                    class="input p-3 border rounded-lg w-1/2 focus:ring-2 focus:ring-blue-400">
+                <button id="addCategoryBtn" class="btn bg-green-500 text-white p-3 rounded-md w-1/4" style="background-color: #fcb045;">add</button>
+            </div>
+
+            <!-- save bookmark button -->
+             <div class="cntr-btn"><button id="saveBtn" class="btn bg-blue-500 text-white p-3 mt-4 rounded-lg min-w-24" style="background-color: #ffffff; color: rgb(107, 107, 107);">save bookmark</button></div>
+            
+
+            <!-- search bar here -->
+            <input type="text" id="searchInput" placeholder="search bookmarks..."
+                class="input mt-4 p-3 border rounded-lg w-full focus:ring-2 focus:ring-blue-400">
+
+            <!-- sort options -->
+            <select id="sortSelect" class="select mt-4 p-3 border rounded-lg w-full focus:ring-2 focus:ring-blue-400">
+                <option value="">sort by...</option>
+                <option value="alphabetical">alphabetical</option>
+                <option value="category">category</option>
+            </select>
+
+            <!-- bookmark list -->
+            <ul id="bookmarkList" class="mt-6 space-y-4"></ul>
+        </div>
+    </div>
+
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
+
+
+<!-- adding commnets so everyone could use this and understand this easily -->
+ <!-- dont forget to follow me  -->
